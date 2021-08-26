@@ -15,7 +15,7 @@ This set of interfaces, contracts, and utilities are all related to the https://
 * {Whitelisted}: The ability to block evil users' transactions and to burn their tokens.
 * {Pausable}: The ability to pause or unpause trasactions of all tokens.
 
-### Finally, there are some utilities to interact with ERC20 contracts in various ways.
+### Finally, there is an ICO for the contract.
 
 * {BozyICO}: The initial token offering.
 
@@ -26,3 +26,6 @@ The following  are important information about the Token:
 - Token Symbol `BOZY`
 - decimals `18`
 - Token ICO price `0.00001 eth`: IN ETH that's 10000000000000 wei
+- Token on sale `2%` or `600,000,000`
+- Initial Goal `2000 ETH`
+- Hardcap `6000 ETH`
