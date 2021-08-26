@@ -5,15 +5,15 @@ This set of interfaces, contracts, and utilities are all related to the https://
 
 There a few core contracts that implement the behavior specified in the EIP:
 
-* {ERC20Interface}: the interface all ERC20 implementations should conform to.
-* {IERC20Metadata}: the extended ERC20 interface including the <<ERC20-name,`name`>>, <<ERC20-symbol,`symbol`>> and <<ERC20-decimals,`decimals`>> functions.
-* {ERC20}: the implementation of the ERC20 interface, including the <<ERC20-name,`name`>>, <<ERC20-symbol,`symbol`>> and <<ERC20-decimals,`decimals`>> optional standard extension to the base interface.
+* {ERC20Interface}: The interface all ERC20 implementations should conform to.
+* {Context}: The information about the caller including the <<msg.sender,`_msgSender()`>> and <<msg.value,`_msgValue()`>> functions.
+* {Bozy}: The implementation of the ERC20 interface including additional functions.
 
 Additionally there are multiple custom extensions, including:
 
-* {ERC20Burnable}: destruction of own tokens.
-* {ERC20Capped}: enforcement of a cap to the total supply when minting tokens.
-* {ERC20Pausable}: ability to pause token transfers.
+* {Ownable}: The information about the founder of the contract and none-zero address modifier.
+* {Whitelisted}: The ability to block evil users' transactions and to burn their tokens.
+* {Pausable}: The ability to pause or unpause trasactions of all tokens.
 * {ERC20Snapshot}: efficient storage of past token balances to be later queried at any point in time.
 * {ERC20Permit}: gasless approval of tokens (standardized as ERC2612).
 * {ERC20FlashMint}: token level support for flash loans through the minting and burning of ephemeral tokens (standardized as ERC3156).
